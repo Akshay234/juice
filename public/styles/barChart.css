@@ -1,0 +1,7 @@
+.ex-tooltip {
+    position: absolute;
+    background: #EEE;
+    border-radius: 3px;
+    padding: 4px;
+    -webkit-box-shadow: 0 1px 3px #000;
+}
