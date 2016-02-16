@@ -2,8 +2,8 @@ var onclick = function(){
 	$('.pieChart').click(function(){
 		window.location.href = '../html/pieChart.html';
 	});
-	$('.circular').click(function(){
-		window.location.href = '../html/circularChart.html';
+	$('.gauge').click(function(){
+		window.location.href = '../html/gaugeChart.html';
 	});
 	$('.barChart').click(function(){
 		window.location.href = '../html/barChart.html';

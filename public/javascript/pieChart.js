@@ -6,7 +6,7 @@ d3.json('../resources/juice_orders', function(json) {
 			var pieFormData = {};
 			pieFormData.label = date.split('-').join(' - ');
 			pieFormData.value = monthlyConsumption[date];
-			return pieFormData;
+      return pieFormData;
 		});
 
 	}
@@ -15,9 +15,9 @@ d3.json('../resources/juice_orders', function(json) {
 		var monthlyConsumption = juiceData.reduce(function(monthsList, entry){
 			var date = String(new Date(entry.date)).split(' ');
 			var month = date[1];
-		    var year = date[3];
-		    monthsList[month+'-'+year] ? monthsList[month+'-'+year] +=1 : monthsList[month+'-'+year] =1;
-		    return monthsList;
+      var year = date[3];
+	    monthsList[month+'-'+year] ? monthsList[month+'-'+year] +=1 : monthsList[month+'-'+year] =1;
+	    return monthsList;
 		},{});
 		return conversionIntoPieChartFormat(monthlyConsumption);
 	};

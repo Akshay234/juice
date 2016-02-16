@@ -63,13 +63,13 @@ var opts = {
   yMax: 6500,
   axisPaddingTop: 40,
   paddingBottom: 70,
-  "mouseover": function (d, i) {
+  mouseover: function (d, i) {
     var pos = $(this).offset();
     $(tt).text(d.x+' - '+d.y)
     .css({top: topOffset + pos.top, left: pos.left + leftOffset})
     .show();
   },
-  "mouseout": function (x) {
+  mouseout: function (x) {
     $(tt).hide();
   },
   timing: 2000
